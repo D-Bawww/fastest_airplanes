@@ -1,0 +1,170 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>Лабораторная работа 2</title>
+</head>
+<body>
+<h1 align=center><big>Самые быстрые самолёты</big></h1>
+<hr>
+<h1><a name=menu>Меню:</a></h1>
+  <ul>
+  <li><a href="Main.html">Назад на галвную страницу</a></li>
+  <li><a href="military.html">Самый быстрый военный самолёт</a></li>
+  <li><a href="civilian.html">Самый быстрый гражданский самолёт</a></li>
+</ul>
+<hr>
+<details>
+    <summary> График </summary>
+    <form>
+        <table>
+          <tbody><tr>
+            <th>Значениe по оси OX</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="ox" value="0">Тип<br>
+              <input type="radio" name="ox" value="1">Страна<br>
+              <input type="radio" name="ox" value="3">Год<br>
+            </td>
+            <td>
+              <input type="checkbox" name="oy" value="0">Максимальная скорость<br>
+              <input type="checkbox" name="oy" value="1">Минимальная скорость<br>
+			  <input type="checkbox" name="oy" value="3">Количество самолётов<br>
+            </td>
+          </tr>
+        </tbody></table>
+		<input type="button" value="Построить">
+	</form>	
+</details> 
+<details>
+    <summary> Фильтр</summary>
+    <form>
+        <p>
+           <label for="structure">Название(НАТО):</label>
+		   <input type="text" name="plane">
+        </p>
+        <p>
+		    <label for="category">Тип:</label>
+            <input type="text" name="type">
+        </p>
+        <p>
+		   <label for="country">Страна:</label>
+          <input type="text" name="country">
+        </p>
+		<p>
+		  <label for="ffFrom">Первый полёт: </label>
+           от <input type="text" name="ffFrom"> до <input type="text" name="ffTo">
+        </p>
+ 		<p>
+		  <label for="msFrom">Максимальная скорость: </label>
+           от <input type="text" name="msFrom"> до <input type="text" name="msTo">
+        </p>
+        <p>
+		   <label for="mhFrom">Максимальная высота:</label>
+           от <input type="text" name="mhFrom"> до <input type="text" name="mhTo">
+        </p>
+        <input type="button" value="Найти">		
+	</form>	
+</details> 
+<details>
+    <summary>Сортировка</summary>
+    <form>
+	  <p>
+          Первый уровень:
+          <select name="sortFirst">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <option value="2">Тип</option>
+            <option value="3">Страна</option>
+            <option value="4">Год</option>
+			<option value="6">Максимальная скорость</option>
+            <option value="5">Максимальная высота</option>
+ 
+          </select>
+          по убыванию? <input type="checkbox" name="descFirst">
+        </p>  
+        <p>
+          Второй уровень:
+		  <select name="sortSecond">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <option value="2">Тип</option>
+            <option value="3">Страна</option>
+            <option value="4">Год</option>
+			<option value="6">Максимальная скорость</option>
+            <option value="5">Максимальная высота</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descSecond">
+        </p>
+        <p>
+          Третий уровень:
+          <select name="sortThird">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <option value="2">Тип</option>
+            <option value="3">Страна</option>
+            <option value="4">Год</option>
+			<option value="6">Максимальная скорость</option>
+            <option value="5">Максимальная высота</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descThird">
+        </p>
+      <input type="button" value="Сортировать">		
+	</form>	
+</details> 
+<br>    
+<table border="1" cellspacing="0" cellpadding="5">
+	<tbody><tr><th>Название(НАТО)</th><th>Тип</th><th>Страна</th><th>Первый полёт</th><th>Макс. скорость, мах</th><th>Макс. высота, футы</th></tr>
+	<tr><td>X-43</td><td>Беспилотный экспериментальный гиперзвуковой летательный аппарат</td><td>США</td><td>2001</td><td>9.8</td><td>110000</td></tr>
+	<tr><td>X-15</td><td>Экспериментальный самолёт</td><td>США</td><td>1959</td><td>6.72</td><td>354200</td></tr>
+	<tr><td>SR-71 Blackbird</td><td>Стратегический разведчик</td><td>США</td><td>1964</td><td>3.2</td><td>85000</td>
+	<tr><td>MiG-25R Foxbat-B</td><td>Разведчик</td><td>СССР</td><td>1964</td><td>3.2</td><td>123524</td>
+	<tr><td>X-2</td><td>Экспериментальный самолёт</td><td>США</td><td>1953</td><td>3.2</td><td>126200</td>
+	<tr><td>XB-70 Valkyrie</td><td>Стратегический бомбардировщик</td><td>США</td><td>1964</td><td>3.1</td><td>77350</td>
+	<tr><td>MiG-31 Foxhound</td><td>Истребитель перехватчик</td><td>СССР, Россия</td><td>1975</td><td>2.83</td><td>67.600</td>
+	<tr><td>MiG-25 Foxbat (Ye-155)</td><td>Перехватчик</td><td>СССР</td><td>1964</td><td>2.8</td><td>118900</td>
+	<tr><td>F-15 Eagle</td><td>Истрибитель</td><td>США</td><td>1972</td><td>2.5</td><td>60000</td>
+	<tr><td>F-111</td><td>Тактический бомбардировщик</td><td>США</td><td>1964</td><td>2.5</td><td>60000</td>
+	<tr><td>SU-57 Felon</td><td>Малозаметный многоцелевой истребитель</td><td>Россия</td><td>2010</td><td>2.45</td><td>66000</td>
+	<tr><td>X-1</td><td>Экспериментальный самолёт</td><td>США</td><td>1946</td><td>2.435</td><td>90440</td>
+	<tr><td>Su-24 Fencer</td><td>Фронтовой бомбардировщик</td><td>СССР, Россия</td><td>1970</td><td>2.4</td><td>57400</td>
+	<tr><td>Tu-144 Charger</td><td>Сверхзвуковой пассажирский самолёт</td><td>СССР</td><td>1968</td><td>2.35</td><td>59055</td>
+	<tr><td>MiG-23 Flogger</td><td>Многоцелевой истребитель</td><td>СССР</td><td>1967</td><td>2.35</td><td>60700</td>
+	<tr><td>Su-27 Flanker</td><td>Многоцелевой истребитель</td><td>СССР, Россия</td><td>1977</td><td>2.35</td><td>59055</td>
+	<tr><td>F-14A Tomcat</td><td>Палубный истребитель</td><td>США</td><td>1970</td><td>2.34</td><td>58000</td>
+	<tr><td>F-106 Delta Dart</td><td>Истребитель перехватчик</td><td>США</td><td>1956</td><td>2.31</td><td>57000</td>
+	<tr><td>IAI Kfir</td><td>Истребитель бомбардировщик</td><td>Израиль</td><td>1973</td><td>2.3</td><td>75000</td>
+	<tr><td>English Electric Lightning</td><td>Истребитель</td><td>Великобритания</td><td>1954</td><td>2.3</td><td>60000</td>
+	<tr><td>MiG-29 Fulcrum</td><td>Лёгкий фронтовой истребитель</td><td>СССР, Россия</td><td>1977</td><td>2.3</td><td>59060</td>
+	<tr><td>F-107 Ultra Sabre</td><td>Истребитель бомбардировщик</td><td>США</td><td>1956</td><td>2.3</td><td>48000</td>
+	<tr><td>Tornado ADV</td><td>Перехватчик</td><td>Великобритания</td><td>1979</td><td>2.2</td><td>69997</td>
+	<tr><td>F-4 Phantom</td><td>Перехватчик</td><td>США</td><td>1958</td><td>2.2</td><td>62250</td>
+	<tr><td>Mirage 2000</td><td>Многоцелевой истрибитель</td><td>Франция</td><td>1978</td><td>2.2</td><td>59055</td>
+	<tr><td>F-104 Starfighter</td><td>Многоцелевой истрибитель</td><td>США</td><td>1954</td><td>2.2</td><td>58000</td>
+	<tr><td>B-58 Hustler</td><td>Сверхзвуковой стратегический бомбардировщик</td><td>США</td><td>1956</td><td>2.2</td><td>64800</td>
+	<tr><td>F-105 Thunderchief</td><td>Истребитель бомбардировщик</td><td>США</td><td>1955</td><td>2.1</td><td>52000</td>
+	<tr><td>A-5 Vigilante</td><td>Бомбардировщик с ядерным ударом</td><td>США</td><td>1958</td><td>2.1</td><td>52100</td>
+	<tr><td>Su-22</td><td>Истребитель бомбардировщик</td><td>СССР</td><td>1966</td><td>2.09</td><td>59055</td>
+	<tr><td>Tu-160 Blackjack</td><td>Сверхзвуковой стратегический бомбардировщик ракетоносец</td><td>СССР, Россия</td><td>1981</td><td>2.05</td><td>52500</td>
+	<tr><td>MiG-21 Fishbed</td><td>Истрибитель</td><td>СССР</td><td>1955</td><td>2.05</td><td>50000</td>
+	<tr><td>Concorde</td><td>Сверхзвуковой пассажирский самолёт</td><td>Франция</td><td>1969</td><td>2.05</td><td>60000</td>
+	<tr><td>D558-2 Skyrocket</td><td>Экспериментальный самолёт</td><td>США</td><td>1948</td><td>2.005</td><td>83235</td>
+	<tr><td>YF-23 Black Widow II</td><td>Прототип истребителя 5-го поколения</td><td>США</td><td>1990</td><td>2</td><td>65000</td>
+	<tr><td>F-20 Tigershark</td><td>Истребитель</td><td>США</td><td>1982</td><td>2</td><td>55000</td>
+	<tr><td>YF-17 Cobra</td><td>Многоцелевой истребитель</td><td>США</td><td>1974</td><td>2</td><td>50000</td>
+	<tr><td>Saab JAS 39 Gripen</td><td>Истребитель бомбардировщик</td><td>Швеция</td><td>1988</td><td>2</td><td>50000</td>
+	<tr><td>F-16 Fighting Falcon</td><td>Многоцелевой истребитель</td><td>США</td><td>1974</td><td>2</td><td>50000</td>
+	<tr><td>Saab 37 Viggen</td><td>Многоцелевой истребитель</td><td>Швеция</td><td>1967</td><td>2</td><td>60000</td>
+	<tr><td>Saab 35 Draken</td><td>Истрибитель</td><td>Швеция</td><td>1955</td><td>2</td><td>65600</td>
+	<tr><td>Tu-22M Backfire</td><td>Дальний сверхзвуковой бомбардировщик ракетоносец</td><td>СССР, Россия</td><td>1969</td><td>1.88</td><td>43635</td>
+	<tr><td>Su-34</td><td>Истребитель бомбардировщик</td><td>СССР, Россия</td><td>1990</td><td>1.8</td><td>45890</td>
+	<tr><td>F/A-18E/F Super Hornet</td><td>Палубный истребитель</td><td>США</td><td>1995</td><td>1.8</td><td>50000</td>
+	<tr><td>F-22 Raptor</td><td>Малозаметный многоцелевой истребитель</td><td>США</td><td>1994</td><td>1.8</td><td>50000</td>
+	<tr><td>XF-104 Starfighter</td><td>Истребитель</td><td>США</td><td>1956</td><td>1.79</td><td>58000</td>
+	<tr><td>F-8 Crusader</td><td>Палубный истребитель</td><td>США</td><td>1955</td><td>1.72</td><td>58000</td>
+	<tr><td>F-101B Voodoo</td><td>Истребитель перехватчик</td><td>США</td><td>1954</td><td>1.66</td><td>52100</td>
+	<tr><td>X-29 FSW</td><td>Экспериментальный самолёт</td><td>США</td><td>1984</td><td>1.6</td><td>50000</td>
+	<tr><td>Tu-22 Blinder</td><td>Дальний бомбардировщик, ракетоносец</td><td>СССР</td><td>1958</td><td>1.52</td><td>48228</td>
+</tbody></table>
+</body>
+</html>
